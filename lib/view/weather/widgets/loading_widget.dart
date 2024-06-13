@@ -9,8 +9,8 @@ class LoadingWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return OrientationBuilder(
       builder: (context,orientation) {
-        if(orientation == Orientation.portrait)
-        return SizedBox(
+        if(orientation == Orientation.portrait) {
+          return SizedBox(
           height: 100.h,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -23,11 +23,11 @@ class LoadingWidget extends StatelessWidget {
               SizedBox(
                 height: 1.h,
               ),
-              Text('Loading Weather...')
+              const Text('Loading Weather...')
             ],
           ),
         );
-        else
+        } else {
           return SizedBox(
             height: 100.w,
             child: Column(
@@ -41,10 +41,11 @@ class LoadingWidget extends StatelessWidget {
                 SizedBox(
                   height: 1.w,
                 ),
-                Text('Loading Weather...')
+                const Text('Loading Weather...')
               ],
             ),
           );
+        }
       }
     );
   }

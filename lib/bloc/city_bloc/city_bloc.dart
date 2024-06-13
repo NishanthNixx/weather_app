@@ -27,10 +27,10 @@ class CityBloc extends Bloc<CityEvents, CityStates> {
   }
 
   void _searchCities(SearchCity event, Emitter<CityStates> emit) {
-    debugPrint("datad"+event.searchQuery.toString());
+
 
     tempList = state.cities.where((e)=> e.city.toLowerCase().startsWith(event.searchQuery.toLowerCase())).toList();
-   debugPrint("datad"+tempList.toString());
+
    emit(state.copyWith(cities: tempList));
   }
 }
