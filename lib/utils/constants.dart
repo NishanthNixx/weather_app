@@ -1,0 +1,40 @@
+import '../model/city_list/city_model.dart';
+
+class Constants {
+
+  List<CityModel> cities = [
+    CityModel(country: 'India',
+    city: 'Kochi',
+    ),
+    CityModel(country: 'United Kingdom',
+      city: 'London',
+    ),
+    CityModel(country: 'South Korea',
+      city: 'Seoul',
+    ),
+    CityModel(country: 'Japan',
+      city: 'Tokyo',
+    ),
+    CityModel(country: 'United States of America',
+      city: 'New York',
+    ),
+    CityModel(country: 'China',
+      city: 'Beijing',
+    ),
+    CityModel(country: 'France',
+      city: 'Paris',
+    ),
+    CityModel(country: 'Spain',
+      city: 'Barcelona',
+    ),
+    CityModel(country: 'Hong Kong',
+      city: 'Hong Kong',
+    ),
+    CityModel(country: 'Netherlands',
+      city: 'Amsterdam',
+    ),
+    CityModel(country: 'India',
+      city: 'Mumbai',
+    ),
+  ];
+}
